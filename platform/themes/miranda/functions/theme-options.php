@@ -180,7 +180,7 @@ theme_option()
         'label'      => __('Primary color'),
         'attributes' => [
             'name'  => 'primary_color',
-            'value' => '#bead8e',
+            'value' => '#01c730',
         ],
     ])
     ->setField([

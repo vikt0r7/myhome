@@ -11,7 +11,7 @@
 
         <style>
             :root {
-                --color-1st: {{ theme_option('primary_color', '#bead8e') }};
+                --color-1st: {{ theme_option('primary_color', '#01c730') }};
                 --primary-font: '{{ theme_option('primary_font', 'Archivo') }}', sans-serif;
                 --secondary-font: '{{ theme_option('secondary_font', 'Old Standard TT') }}', sans-serif;
                 --tertiary-font: '{{ theme_option('tertiary_font', 'Roboto') }}', sans-serif;

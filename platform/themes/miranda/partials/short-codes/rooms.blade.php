@@ -4,7 +4,7 @@
         <div class="row rooms-slider-one">
             @foreach($rooms as $room)
                 <div class="col">
-                    <div class="slider-img" style="background-image: url({{ RvMedia::getImageUrl($room->image, '550x580') }});"></div>
+                    <div class="slider-img" style="background-image: url({{ RvMedia::getImageUrl($room->image) }});"></div>
                 </div>
             @endforeach
         </div>

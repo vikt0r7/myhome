@@ -187,6 +187,10 @@ class RvMedia
      */
     public function getImageUrl($url, $size = null, $relativePath = false, $default = null)
     {
+        if (getenv('DEFAULT_IMAGES', true)) {
+            $size = null;
+        }
+
         if (empty($url)) {
             return $default;
         }

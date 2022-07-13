@@ -304,7 +304,7 @@
                 <div class="sidebar">
                     <div style="font-family: 'Old Standard TT', serif; color: #fff; font-size: 14px;">
                         <div style="position: relative">
-                            <span class="room-type" style="background-color: #bead8e; color: #fff; padding: 3px 5px; text-transform: uppercase; position: absolute; top: 15px; left: 15px;">{{ $room->name }}</span>
+                            <span class="room-type" style="background-color: #01c730; color: #fff; padding: 3px 5px; text-transform: uppercase; position: absolute; top: 15px; left: 15px;">{{ $room->name }}</span>
                             <img src="{{ RvMedia::getImageUrl($room->image, '380x280', false, RvMedia::getDefaultImage()) }}" alt="{{ $room->name }}">
                         </div>
                         <div style="padding: 20px; background-color: #bead8e;">
