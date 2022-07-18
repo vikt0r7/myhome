@@ -24,7 +24,7 @@ add('writable_dirs', []);
 
 // Hosts
 host('prod')
-    ->hostname('example.com')
+    ->hostname('my-home.sk')
     ->set('testing', 'prod')
     ->set('deploy_path', '~/{{application}}');
 
