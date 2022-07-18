@@ -13,6 +13,8 @@ set('repository', 'git@github.com:vikt0r7/myhome.git');
 set('git_tty', true);
 
 set('testing', 'prod');
+set('ssh_multiplexing', false);
+set('use_relative_symlinks', false);
 
 // Shared files/dirs between deploys
 add('shared_files', []);
