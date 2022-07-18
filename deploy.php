@@ -12,6 +12,8 @@ set('repository', 'git@github.com:vikt0r7/myhome.git');
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', true);
 
+set('testing', 'prod');
+
 // Shared files/dirs between deploys
 add('shared_files', []);
 add('shared_dirs', []);
@@ -21,11 +23,9 @@ add('writable_dirs', []);
 
 
 // Hosts
-host('my-home.sk')
-    ->user('myuser')
-    ->set('branch', 'main')
-    ->stage('production')
-    ->set('phinx.environment', 'production')
+host('prod')
+    ->hostname('example.com')
+    ->set('testing', 'prod')
     ->set('deploy_path', '~/{{application}}');
 
 // Tasks
