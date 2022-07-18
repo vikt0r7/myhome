@@ -22,7 +22,7 @@ add('writable_dirs', []);
 
 // Hosts
 
-host('project.com')
+host('my-home.sk')
     ->set('deploy_path', '~/{{application}}');
 
 // Tasks
