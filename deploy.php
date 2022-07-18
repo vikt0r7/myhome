@@ -21,8 +21,11 @@ add('writable_dirs', []);
 
 
 // Hosts
-
 host('my-home.sk')
+    ->user('myuser')
+    ->set('branch', 'main')
+    ->stage('production')
+    ->set('phinx.environment', 'production')
     ->set('deploy_path', '~/{{application}}');
 
 // Tasks
