@@ -142,7 +142,7 @@ class EmailHandler
      * @param string $type
      * @return $this
      */
-    public function addTemplateSettings(string $module, array $data, string $type = 'plugins'): self
+    public function addTemplateSettings(string $module, ?array $data, string $type = 'plugins'): self
     {
         if (empty($data)) {
             return $this;

@@ -29,7 +29,7 @@ class CookieConsentServiceProvider extends ServiceProvider
             $this->app['view']->composer('plugins/cookie-consent::index', function (View $view) {
                 $cookieConsentConfig = config('plugins.cookie-consent.general');
 
-                $alreadyConsentedWithCookies = Cookie::has($cookieConsentConfig['cookie_name']);
+                $alreadyConsentedWithCookies = Cookie::has($cookieConsentConfig['cookie_name'] ?? null);
 
                 $view->with(compact('alreadyConsentedWithCookies', 'cookieConsentConfig'));
             });
